@@ -1,5 +1,5 @@
 helper = require('./helper')
-model = helper.require('./src/model')
+model = helper.require('./src/index')
 
 class Base
   @count: 1

@@ -23,7 +23,4 @@ class Model
     for name of @.constructor.attributes
       @[name] = if params?[name]? then params[name] else null
 
-module.exports.Model = Model
-module.exports.types =
-  string: 1
-  integer: 2
+module.exports = Model
