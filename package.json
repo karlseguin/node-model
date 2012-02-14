@@ -1,0 +1,8 @@
+{
+  "author": "Karl Seguin <karl@openmymind.net> (http://openmymind.net/)",
+  "name": "node-model",
+  "version": "0.0.1",
+  "description": "A model helper",
+  "main": "./lib/index",
+  "engines": { "node": ">= v0.6.9" },
+}
