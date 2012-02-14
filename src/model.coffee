@@ -1,4 +1,5 @@
 moduleKeywords = ['extended', 'included']
+types = require('./types')
 
 class Model
   @extend: (obj) ->
@@ -20,7 +21,14 @@ class Model
     @attributes[name] = type
 
   constructor: (params) ->
-    for name of @.constructor.attributes
-      @[name] = if params?[name]? then params[name] else null
+    for name, type of @.constructor.attributes
+      value = params?[name]
+      if !value?
+        value = null
+      else if type == types.integer
+        value = parseInt(value)
+        value = null if isNaN(value)
+
+      @[name] = value
 
 module.exports = Model
