@@ -5,4 +5,10 @@
   "description": "A model helper",
   "main": "./lib/index",
   "engines": { "node": ">= v0.6.9" },
+  "devDependencies": {
+    "jasmine-node": "= 1.0.20"
+  },
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node --coffee spec/"
+  }
 }
