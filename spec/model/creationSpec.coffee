@@ -8,8 +8,8 @@ class Test extends model.Model
 describe 'Model Creation', ->
 
   it "defines the attributes", ->
-    expect(Test.attributes.name).toEqual(1)
-    expect(Test.attributes.score).toEqual(2)
+    expect(Test._attributes.name).toEqual(1)
+    expect(Test._attributes.score).toEqual(2)
 
   it "creates an empty mobject", ->
     test = new Test()
