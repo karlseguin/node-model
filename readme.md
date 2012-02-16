@@ -6,7 +6,6 @@ A lightweight base model object. This is currently storage-agnostic (and may rem
 
 # Usage
 
-
     model = require('node-model')
 
     class User extends model.Model
